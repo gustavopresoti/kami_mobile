@@ -112,7 +112,8 @@ class LoginPage extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => HomePage()));
                       },
                       child: Text(
                         'Enter'.toUpperCase(),
